@@ -1,4 +1,5 @@
-# Elevator Controller 
+# Elevator Controller #
+![Language](https://img.shields.io/badge/Language-SystemVerilog-blue) ![Tool](https://img.shields.io/badge/Tool-Xilinx_Vivado-orange) ![Status](https://img.shields.io/badge/Status-Simulation_Verified-success)
 ##  Project Overview
 
 The circuit simulates the core logic of an elevator. It receives inputs indicating the target floor and a stop signal. Like a real elevator, traveling between non-adjacent floors involves passing through intermediate floors. It also tracks the total number of floor changes requested by the user.
@@ -18,14 +19,8 @@ The project is structured hierarchically:
   * `elevator_fsm.sv` - The core Finite State Machine controlling floor logic.
   * `change_detector.sv` - Compares current input to a registered previous input to generate a one-cycle pulse on change.
   * `counter.sv` - A parameterizable counter that increments whenever the `change_detector` fires.
-
-##  Getting Started
-
-### Prerequisites
-To simulate and view the waveforms for this project, you will need a SystemVerilog-compatible simulator. Popular options include:
-* Xilinx Vivado
-* ModelSim / QuestaSim
-* Icarus Verilog (iverilog) + GTKWave (Open Source)
+## Schematic
+<img width="1764" height="764" alt="image" src="https://github.com/user-attachments/assets/19bc4bed-a597-4b15-b5f1-8e8b9e305d7b" />
 
 ### Running the Simulation
 1. Clone this repository to your local machine.
