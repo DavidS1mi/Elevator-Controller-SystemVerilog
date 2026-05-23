@@ -24,6 +24,9 @@ The project is structured hierarchically:
 
 ##  Waveform Verification
 
+<img width="1662" height="263" alt="image" src="https://github.com/user-attachments/assets/d3a652db-311a-4ebe-a661-f646b7916cc7" />
+
+
 The included testbench (`elevator_tb.sv`) is designed to rigorously test the FSM transitions, ensuring:
 1. The elevator properly resets to Floor 0.
 2. The elevator passes through intermediate floors (e.g., from Floor 0 to Floor 3, it visits 1 and 2).
