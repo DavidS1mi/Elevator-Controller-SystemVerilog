@@ -22,12 +22,6 @@ The project is structured hierarchically:
 ## Schematic
 <img width="1764" height="764" alt="image" src="https://github.com/user-attachments/assets/19bc4bed-a597-4b15-b5f1-8e8b9e305d7b" />
 
-### Running the Simulation
-1. Clone this repository to your local machine.
-2. Add all `.sv` files to your simulation project.
-3. Set `elevator_tb.sv` as the top-level module for simulation.
-4. Run the simulation for at least `180ns` to see the full test sequence.
-
 ##  Waveform Verification
 
 The included testbench (`elevator_tb.sv`) is designed to rigorously test the FSM transitions, ensuring:
