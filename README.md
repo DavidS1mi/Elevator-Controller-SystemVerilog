@@ -4,7 +4,7 @@
 
 The circuit simulates the core logic of an elevator. It receives inputs indicating the target floor and a stop signal. Like a real elevator, traveling between non-adjacent floors involves passing through intermediate floors. It also tracks the total number of floor changes requested by the user.
 
-### Key Features:
+### Features:
 * **4-State FSM:** Represents the 4 floors (0 to 3), handling realistic transitions based on current state and user input.
 * **Edge Detection:** Uses a custom `change_detector` module to register when a new floor button is pressed.
 * **Parameterizable Counter:** A flexible counter module used to keep track of how many times the elevator has changed states.
@@ -32,7 +32,3 @@ The included testbench (`elevator_tb.sv`) is designed to rigorously test the FSM
 2. The elevator passes through intermediate floors (e.g., from Floor 0 to Floor 3, it visits 1 and 2).
 3. The `stop` signal successfully halts the elevator at its current intermediate floor, overriding the initial request.
 4. The `changes_count` increments exactly when a new, distinct input is provided.
-
-##  Technologies Used
-* **Hardware Description Language:** SystemVerilog
-* **Target Application:** FPGA-based Digital Logic
